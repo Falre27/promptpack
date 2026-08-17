@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "promptpack-cli"
+version = "0.1.0"
+description = "Pack any local codebase directory into a clean, LLM-ready prompt formatted for Claude & ChatGPT."
+readme = "README.md"
+authors = [{ name = "Open Source Developer" }]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Utilities",
+]
+keywords = ["cli", "llm", "claude", "chatgpt", "prompt", "codebase", "context"]
+dependencies = [
+    "pathspec>=0.10.0",
+    "pyperclip>=1.8.0"
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+clip = ["pyperclip>=1.8.0"]
+test = ["pytest"]
+dev = ["build", "twine", "pytest"]
+
+
+[project.urls]
+Homepage = "https://github.com/username/promptpack"
+Repository = "https://github.com/username/promptpack"
+Issues = "https://github.com/username/promptpack/issues"
+
+[project.scripts]
+promptpack = "promptpack.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
