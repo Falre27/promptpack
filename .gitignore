@@ -66,6 +66,9 @@ venv.bak/
 *~
 .DS_Store
 
-# Promptpack outputs
+# Promptpack outputs & Handoffs
 prompt.md
 prompt_*.md
+SESSION_HANDOFF.md
+*.handoff.md
+
