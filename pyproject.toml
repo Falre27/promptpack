@@ -36,9 +36,10 @@ dev = ["build", "twine", "pytest"]
 
 
 [project.urls]
-Homepage = "https://github.com/username/promptpack"
-Repository = "https://github.com/username/promptpack"
-Issues = "https://github.com/username/promptpack/issues"
+Homepage = "https://github.com/Falre27/promptpack"
+Repository = "https://github.com/Falre27/promptpack"
+Issues = "https://github.com/Falre27/promptpack/issues"
+
 
 [project.scripts]
 promptpack = "promptpack.cli:main"

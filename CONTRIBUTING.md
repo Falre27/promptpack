@@ -6,7 +6,7 @@ Thank you for your interest in contributing to `promptpack`!
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/username/promptpack.git
+   git clone https://github.com/Falre27/promptpack.git
    cd promptpack
    ```
 
